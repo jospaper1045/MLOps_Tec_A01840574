@@ -1,0 +1,31 @@
+# Entorno virtual
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Testing / lint
+.pytest_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Variables de entorno / secretos
+.env
+.env.*
+
+# MLflow
+mlruns/
+mlartifacts/
+mlflow.db
+
+# VS Code
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db

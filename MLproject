@@ -1,0 +1,17 @@
+name: ESP_Power_Regression
+
+entry_points:
+  main:
+    parameters:
+      data_path: {type: string, default: "data/raw/ESP_Data_wells_Anonymized_Rev0_Sin_Well_Name.csv"}
+      test_size: {type: float, default: 0.20}
+      impute_strategy: {type: string, default: "median"}
+      fit_intercept: {type: string, default: "true"}
+      random_state: {type: int, default: 42}
+    command: >-
+      python -m esp_project.pipelines.training
+      --data-path {data_path}
+      --test-size {test_size}
+      --impute-strategy {impute_strategy}
+      --fit-intercept {fit_intercept}
+      --random-state {random_state}

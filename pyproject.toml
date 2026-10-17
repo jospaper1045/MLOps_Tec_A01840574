@@ -1,0 +1,19 @@
+[project]
+name = "esp-project"
+version = "0.1.0"
+description = "Estimación de potencia en sistemas de bombeo electrosumergible"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "matplotlib==3.10.8",
+    "mlflow==3.17.1",
+    "numpy==2.2.6",
+    "pandas==2.3.3",
+    "scikit-learn==1.7.2",
+]
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
